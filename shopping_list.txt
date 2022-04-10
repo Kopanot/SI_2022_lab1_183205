@@ -1,5 +1,5 @@
-Banana
-Apple
-Corn
-Cherry
-Bread
+Banana x3
+Apple x2
+Corn x5
+Cherry x4
+Bread x7
