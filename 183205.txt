@@ -1,0 +1,102 @@
+4...........................
+Документот е клониран
+
+5.............................
+ C:\SI\SI_2022_lab1_183205>git init
+Reinitialized existing Git repository in C:/SI/SI_2022_lab1_183205/.git/
+
+C:\SI\SI_2022_lab1_183205>notepad shopping_list.txt    /// креирање на документ shopping_list.txt
+
+C:\SI\SI_2022_lab1_183205>git add .
+
+C:\SI\SI_2022_lab1_183205>git commit -m "Add 5 items to the shopping list" /// правам commit на shopping_list.txt
+[master 85ff254] Add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+6.....................................
+C:\SI\SI_2022_lab1_183205>git add .
+
+C:\SI\SI_2022_lab1_183205>git commit -m "Add quantities to the items."   ///правам commit на shopping_list.txt по додавање на количините
+[master c51859a] Add quantities to the items.
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+
+7.....................................
+C:\SI\SI_2022_lab1_183205>git branch branch1        /// креирање на branch1
+
+C:\SI\SI_2022_lab1_183205>git branch branch2	    /// креирање на branch1
+
+C:\SI\SI_2022_lab1_183205>git branch --list	    /// сите branches моментално
+  branch1
+  branch2
+* master
+
+10........................
+C:\SI\SI_2022_lab1_183205>git checkout branch1		///префрлање од master на branch1
+Switched to branch 'branch1'
+
+11..............................
+C:\SI\SI_2022_lab1_183205>git add .			
+
+C:\SI\SI_2022_lab1_183205>git commit -m "Change quantity of item #5"   ///правам commit на shopping_list.txt по менување на Item 5
+[branch1 03ac6a4] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12................................
+C:\SI\SI_2022_lab1_183205>git checkout master		////префрлање од branch 1 на master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+13..................................
+C:\SI\SI_2022_lab1_183205>git add .
+
+C:\SI\SI_2022_lab1_183205>git commit -m "Change quantity of item #2"	///правам commit на shopping_list.txt по менување на Item 2
+[master 878cfeb] Change quantity of item #2
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+15..................................
+C:\SI\SI_2022_lab1_183205>git checkout branch2			///префрлање од master на branch2
+Switched to branch 'branch2'
+
+16.....................
+C:\SI\SI_2022_lab1_183205>git add .
+
+C:\SI\SI_2022_lab1_183205>git commit -m "Modify item #4"		///правам commit на shopping_list.txt по менување на Item 4
+[branch2 6499dd3] Modify item #4
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+18...............................
+C:\SI\SI_2022_lab1_183205>git add .
+
+C:\SI\SI_2022_lab1_183205>git commit --amend -m "Modify item #4 and add item #6"   //го модифицирам последниот commit на shopping_list.txt по додавање на Item 6
+[branch2 10c73d5] Modify item #4 and add item #6
+ Date: Sun Apr 10 23:10:59 2022 +0200
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+20......................
+C:\SI\SI_2022_lab1_183205>git checkout master	//се префрлам на master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\SI\SI_2022_lab1_183205>git merge branch1	//ја спојувам master со branch 1, овде нема никаков конфликт 
+Auto-merging shopping_list.txt			// спојувањето се прави со ort strategy
+Merge made by the 'ort' strategy.
+
+21.......................
+C:\SI\SI_2022_lab1_183205>git merge branch2	// се случи конфликт..во Pull request рачно го решив конфликтот бришејќи ги непотребните редови
+Auto-merging shopping_list.txt			// па потоа со mark as resolved и commit merge проблемот се среди
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+
+
+
+
+
+
+
+
+
+
