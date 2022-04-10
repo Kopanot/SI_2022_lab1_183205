@@ -4,3 +4,5 @@ Corn x5
 Milk x4
 Bread x15
 Coconuts
+Cherry x4
+Bread x15
