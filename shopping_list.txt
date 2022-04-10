@@ -1,5 +1,7 @@
 Banana x3
 Apple x10
 Corn x5
-Cherry x4
+Milk x4
 Bread x15
+Coconuts
+Cherry x4
